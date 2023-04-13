@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.icon{
+    height: 50px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+header{
+    background-color: brown;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.titulo{
+    color: #fff;
+    height: 50px;
+    font-size: 2.5rem;
+}
+
+.titulo-secundario{
+    margin: 30px 10px;
+    font-size: 2rem;
+}
+
+pre{
+    margin: 20px;
+    padding: 10px;
+}
+
+label{
+    margin-left: 20px;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    padding: 2px 7px;
+}
+
+select{
+    margin: 20px;
+}
+
+input[type="button"]{
+    /* display: block; */
+    height: 30px;
+    margin: 20px 0px 20px 20px;
+    color: #fff;
+    background-color: brown;
+    border: none;
+    text-transform: uppercase;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(88, 30, 30);
+   cursor: pointer;
+}
+
+table{
+    margin: 20px;
+}
+
+th{
+    text-align: center;
+    height: 30px;
+    background-color: brown;
+    color: #fff;
+}
+
+td{
+    padding: 5px;
+    text-align: center;
+    width: 70px;
+
+}
+
+tr{
+    background-color: rgb(255, 203, 175);
+}
+
+tr:nth-child(odd){  
+    background-color: rgb(250, 216, 198);
+}
+
+
+td:nth-child(1){
+    width: 150px;
+    text-align: left;
+}

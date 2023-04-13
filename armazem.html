@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazém Xampu</title>
+    <link rel="icon" type="imagem/png" href="box.png" />
+    <link rel="stylesheet" href="armazem.css">
+</head>
+<body>
+    <header>
+        <img src="box.png" class="icon">
+        <h1 class="titulo">Armazém Xampu</h1>
+    </header>
+    <main>
+        <select name="opcao" id="selectOpcao">
+            <option value="">Selecione uma opção!</option>
+            <option value="Listar">Listar Tabela Vendas Semestre.</option>
+            <option value="Acrescentar">Acrescente um produto.</option>
+            <option value="Alterar">Altere a quantidade vendida.</option>
+            <option value="ConsultarQtd">Consulta Quantidade Vendida no Semestre.</option>
+            <option value="ConsultarProd">Consulta Produto Mais Vendido no Mês.</option>
+            <option value="FaturamentoMensal"> Faturamento obtido com as vendas em um determinado mês.</option>
+            <option value="FiltrarEstoque"> Filtrar Estoque até Determinada Qtd.</option>
+           
+        </select>
+        <section>
+            <label>Produto: <input type="text" placeholder="Digite um produto" id="inProduto"></label>
+            
+            <label>Mês: <input type="number" placeholder="Digite um mês [1-6]" id="inMes"></label>
+            <label>Quantidade: <input type="number" placeholder="Digite a quantidade" id="inQtd"></label>
+            <div>
+                <input type="button" value="Ok" id="btOk">
+            </div>
+            <pre id="outResultado">Resultado</pre> 
+        </section>
+        <section class="resultado">
+            
+        </section>
+    </main>
+    
+    <script src="armazemInterface.js" type="module"></script>
+
+</body>
+</html>
